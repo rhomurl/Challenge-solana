@@ -45,7 +45,6 @@ const airDropSol = async () => {
 
         // Request airdrop of 2 SOL to the wallet
         console.log("Airdropping some SOL to my wallet!");
-		console.log(process.argv[2]);
         const fromAirDropSignature = await connection.requestAirdrop(
             new PublicKey(process.argv[2]),
             2 * LAMPORTS_PER_SOL
