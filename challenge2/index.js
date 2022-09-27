@@ -51,7 +51,7 @@ const transferSol = async() => {
         SystemProgram.transfer({
             fromPubkey: from.publicKey,
             toPubkey: to.publicKey,
-            lamports: Math.round(halfBalance)
+            lamports: halfBalance
         })
     );
 
